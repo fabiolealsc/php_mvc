@@ -1,0 +1,8 @@
+{
+    "name":"php_mvc/projeto_padrao",
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        }
+    }
+}
