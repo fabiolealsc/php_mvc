@@ -22,3 +22,9 @@ $obRouter->get('/pagina/{idPagina}/{acao}', [
         return new Response(200, 'Pagina ' . $idPagina . '-' . $acao);
     }
 ]);
+
+$obRouter->get('/depoimentos', [
+    function ($idPagina, $acao) {
+        return new Response(200, Pages\Testimony::getTestimonies());
+    }
+]);

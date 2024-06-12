@@ -4,8 +4,12 @@ require __DIR__.'/vendor/autoload.php';
 
 use \App\Http\Router;
 use App\Utils\View;
+use \WilliamCosta\DotEnv\Environment;
 
-define('URL', 'http://localhost:8000/projeto_padrao');
+// Variaveis de ambiente
+Environment::load(__DIR__);
+
+define('URL', getenv('URL'));
 
 View::init([
     'URL' => URL
