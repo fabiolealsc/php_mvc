@@ -7,10 +7,11 @@ use App\Utils\View;
 
 class About extends Page{
     /**
-     * Método responsável por retornar o conteúdo(view) da nossa home
+     * Método responsável por retornar o conteúdo(view) da nossa Sobre
      * @return string
      */
-    public static function getHome(): string{
+    public static function getAbout(): string
+    {
         $obOrganization = new Organization;
         // VIEW HOME
         $content = View::render('pages/about', [
